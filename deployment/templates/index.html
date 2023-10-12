@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>base</title>
+    <style>
+        body {
+            background-color: #f1f1f1; /* Set a background color */
+            font-family: Arial, sans-serif; /* Define a font family */
+        }
+
+        h1 {
+            text-align: center; /* Center-align the heading */
+            color: #333; /* Text color */
+            padding: 20px; /* Add some spacing around the heading */
+        }
+
+        form {
+            text-align: center; /* Center-align the form */
+            margin: 20px; /* Add some margin to the form */
+        }
+
+        input[type="file"] {
+            display: block; /* Display the file input as a block element */
+            margin: 0 auto; /* Center-align the file input */
+            padding: 10px; /* Add some spacing */
+        }
+
+        input[type="submit"] {
+            background-color: #007bff; /* Background color for the submit button */
+            color: #fff; /* Text color for the submit button */
+            border: none; /* Remove the button border */
+            padding: 10px 20px; /* Add padding to the button */
+            cursor: pointer; /* Add a pointer cursor on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Change background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my tomato model deployment</h1>
+    <form action="prediction" method="POST" enctype="multipart/form-data">
+        <input type="file" name="img">
+        <input type="submit" name="btn">
+    </form>
+</body>
+</html>
